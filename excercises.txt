@@ -1,0 +1,13 @@
+write a program to check if number if even or odd (use of if)
+write a program to display factorial of number (use label to loop)
+write a program to check if number is prime or not (use for loop)
+write program to show use of goto :eof and call and :label
+write a program to show use of setlocal and endlocal 
+write a program to show use of setlocal enabledelayedexpansion and !variable!
+write a program to print hello n times
+write a program to show all directories,files,file contents in folder (using for loop /r /d /f)
+
+
+
+
+
