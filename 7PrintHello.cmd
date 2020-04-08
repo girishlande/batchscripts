@@ -1,6 +1,10 @@
 :: script to print hello n times
 @echo off
 
+setlocal enabledelayedexpansion
+
+set arg=%1
+
 if "%arg%" == "" (
   echo argument is not passed
   exit /b 
