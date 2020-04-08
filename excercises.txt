@@ -1,12 +1,14 @@
-write a program to check if number if even or odd (use of if)
-write a program to display factorial of number (use label to loop)
-write a program to check if number is prime or not (use for loop)
-write program to show use of goto :eof and call and :label
-write a program to show use of setlocal and endlocal 
-write a program to show use of setlocal enabledelayedexpansion and !variable!
-write a program to print hello n times
-write a program to show all directories,files,file contents in folder (using for loop /r /d /f)
-
+1. write a program to check if number is even or odd (use of if)
+2. write a program to display factorial of number (use label to loop)
+3. write a program to check if number is prime or not (use for loop)
+4. write program to show use of goto :eof and call and :label
+5. write a program to show use of setlocal and endlocal 
+6. write a program to show use of setlocal enabledelayedexpansion and !variable!
+7. write a program to print hello n times
+8. write a program to show all directories,files,file contents in folder (using for loop /r /d /f)
+9. Check if argument is passed and if its present then use it. 
+10. Iterate through all arguments and display them 
+11. functions in batch file 
 
 
 
