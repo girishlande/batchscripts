@@ -31,3 +31,4 @@ echo number is not prime
 pause
 color 07
 cls
+

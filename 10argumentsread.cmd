@@ -1,16 +1,19 @@
-:: script to iterate on all arguments of the command 
+:: script to iterate on all arguments of the command and display them 
 @echo off
 
-echo "Hello "
+set arg=%1
+if [%arg%]==[] (
+  echo Pass some arguments to script
+  goto :eof
+)
 
 :loop
 set arg=%1
-if "%arg%" == "" goto :last
+if [%arg%] == [] 
+  goto :eof
+
 echo %arg%
 shift
+
 goto :loop
 
-
-
-:last
-echo "done"

@@ -7,7 +7,7 @@ goto :main
 :function1 
 echo function 1 called 
 echo function argument is %~1
-goto :eof
+exit /b 0
 
 :function2
 echo function 2 called

@@ -1,0 +1,114 @@
+:: -----------------------------
+:: Learnings 
+:: -----------------------------
+:: @echo off will stop displaying commands in script 
+
+:: always encapsulate your code in setlocal and endlocal
+:: otherwise your variables declared using set 
+:: will be visible outside script using echo %variable%
+
+:: set /p is used to prompt user for input and input is stored 
+:: in declared variable using set 
+
+:: set /a will treat the result as numeric value. 
+:: By default it treats these values as strings.
+
+:: %variable% is used to refer to the value of variable
+
+:: %% is modulus operator 
+
+:: -----------------------------
+:: if block has syntax 
+:: if <condition> (
+::    // expressions
+:: ) else (
+::    // expressions
+:: )
+
+:: keywords are not case sensitive and hence IF = if 
+
+:: -----------------------------
+:: use of goto to mimic loops 
+:mloop
+  echo We are in loops
+  set /a cnt=%cnt%+1
+  if %cnt% LEQ 10 (
+     echo Hello
+	 goto :mloop
+  ) 
+
+:: -----------------------------
+:: Don't use space while assigning values to variables. 
+:: like set /p num = Enter a number:
+:: batch script doesn't ignore spaces 
+
+:: -----------------------------
+:: comparison operators 
+    EQU - equal
+    NEQ - not equal
+    LSS - less than
+    LEQ - less than or equal
+    GTR - greater than
+    GEQ - greater than or equal
+if 1 EQU 1 
+echo 1 is equal to 1
+
+:: -----------------------------
+:: Empty string check 
+@echo off 
+SET a= 
+SET b=Hello 
+if [%a%]==[] echo "String A is empty" 
+if [%b%]==[] echo "String B is empty "
+
+:: -----------------------------
+:: Calculating string length 
+@echo off
+set str = Hello World
+call :strLen str strlen
+echo String is %strlen% characters long
+exit /b
+
+:strLen
+setlocal enabledelayedexpansion
+
+:strLen_Loop
+   if not "!%1:~%len%!"=="" set /A len+=1 & goto :strLen_Loop
+(endlocal & set %2=%len%)
+goto :eof
+
+:: -----------------------------
+Extract characters from beginning of string
+@echo off 
+set str = Helloworld 
+echo %str% 
+
+set str = %str:~0,5% 
+echo %str%
+
+:: -----------------------------
+:: setlocal enabledelayedexpansion will enable use of 
+:: variable use immediately using !variable! syntax. 
+:: for example in below code will never print anything
+:: because %VAR% will get exapanded in both IF conditions
+:: in beginning. And hence to fix this problem we use 
+:: delayed expansion  in second snippet 
+set VAR=before
+if "%VAR%" == "before" (
+    set VAR=after
+    if "%VAR%" == "after" @echo If you see this, it worked
+)
+
+ :: correct way 
+set VAR=before
+if "%VAR%" == "before" (
+    set VAR=after
+    if "!VAR!" == "after" @echo If you see this, it worked
+)
+
+:: -------------------------------
+:: Using For loops (initial value , increment by, limit 
+for /L %%g in (1,1,10) do (
+
+)
+

@@ -6,7 +6,7 @@
 6. write a program to show use of setlocal enabledelayedexpansion and !variable!
 7. write a program to print hello n times
 8. write a program to show all directories,files,file contents in folder (using for loop /r /d /f)
-9. Check if argument is passed and if its present then use it. 
+9. Check if file is present or not, check if variable is defined or not
 10. Iterate through all arguments and display them 
 11. functions in batch file 
 
