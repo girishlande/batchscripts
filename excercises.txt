@@ -9,7 +9,7 @@
 9. Check if file is present or not, check if variable is defined or not
 10. Iterate through all arguments and display them 
 11. functions in batch file 
-
+12. Write script to check command line argument debug or release and set mode variable which can be used by all scripts
 
 
 

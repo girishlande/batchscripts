@@ -1,0 +1,10 @@
+ Volume in drive D is New Volume
+ Volume Serial Number is 0ADF-E371
+
+ Directory of D:\git\batchscripts\build_debug
+
+09-04-2020  17:28    <DIR>          .
+09-04-2020  17:28    <DIR>          ..
+09-04-2020  17:28                 0 log.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  807,101,292,544 bytes free

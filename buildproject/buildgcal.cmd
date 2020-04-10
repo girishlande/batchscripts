@@ -1,5 +1,5 @@
 pushd repos
-pushd dicom_mwl
+pushd gcal 
 pushd build_%mode%
 
 cmake ../source

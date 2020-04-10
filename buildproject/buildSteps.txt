@@ -1,0 +1,16 @@
+assume all source code zip files are in /libs folder
+1. unzipAll.cmd
+It should unzip all files in /libs folder
+
+2. createTree.cmd
+It should create /repos folder
+and It should create one folder for each lib
+Inside that folder it should create source folder
+and depending upon type it should create build_debug or build_release
+It in turn calls createbuildfolder.cmd to create folders
+
+3. copySourceCode.cmd
+It should copy required source from unzipped /libs folder to their 
+respective folder in repos folder. 
+
+4. Build all folders one by one 

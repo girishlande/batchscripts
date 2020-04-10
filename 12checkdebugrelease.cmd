@@ -11,7 +11,10 @@ if [%arg%]==[] (
 ) 
 
 :checkmode
-if [%arg%]==[debug] set mode=debug
+if [%arg%]==[debug] (
+  set mode=debug
+  goto :main
+)
 
 if [%arg%]==[release] (
   set mode=release
@@ -23,6 +26,11 @@ if [%arg%]==[release] (
 :main
  
 echo current mode: %mode%
+mkdir build_%mode%
+pushd build_%mode%
+echo inside build directory
+dir > log.txt
+popd
 call ta.cmd
 
 endlocal
