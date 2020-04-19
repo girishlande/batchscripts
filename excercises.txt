@@ -13,4 +13,4 @@
 13. write a script to force command line argument 
 14. Write a script to rename all files in folder with index 
 15. Write a script to build vtk using cmake 
-
+16.write a script to parse text file and output parsed text 
