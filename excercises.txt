@@ -1,16 +1,16 @@
-1. write a program to check if number is even or odd (use of if)
-2. write a program to display factorial of number (use label to loop)
-3. write a program to check if number is prime or not (use for loop)
-4. write program to show use of goto :eof and call and :label
-5. write a program to show use of setlocal and endlocal 
-6. write a program to show use of setlocal enabledelayedexpansion and !variable!
-7. write a program to print hello n times
-8. write a program to show all directories,files,file contents in folder (using for loop /r /d /f)
-9. Check if file is present or not, check if variable is defined or not
-10. Iterate through all arguments and display them 
-11. functions in batch file 
-12. Write script to check command line argument debug or release and set mode variable which can be used by all scripts
-13. write script to force command line argument 
-14. Write script to rename all files in folder with index 
-
+1. write a script to check if number is even or odd (use of if)
+2. write a script to display factorial of number (use label to loop)
+3. write a script to check if number is prime or not (use for loop)
+4. write a script to show use of goto :eof and call and :label
+5. write a script to show use of setlocal and endlocal 
+6. write a script to show use of setlocal enabledelayedexpansion and !variable!
+7. write a script to print hello n times
+8. write a script to show all directories,files,file contents in folder (using for loop /r /d /f)
+9. write a script to Check if file is present or not, check if variable is defined or not
+10. write a script to Iterate through all arguments and display them 
+11. write a script to show functions in batch file 
+12. Write a script to check command line argument debug or release and set mode variable which can be used by all scripts
+13. write a script to force command line argument 
+14. Write a script to rename all files in folder with index 
+15. Write a script to build vtk using cmake 
 
