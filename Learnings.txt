@@ -1,5 +1,5 @@
 :: -----------------------------
-:: Learnings 
+:: Learnings of batch script
 :: -----------------------------
 :: @echo off will stop displaying commands in script 
 
