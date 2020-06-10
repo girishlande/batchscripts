@@ -1,0 +1,2 @@
+cd girish/RCApplication/bin
+sudo ./run_multiple.sh
