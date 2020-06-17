@@ -4,7 +4,7 @@
 
 :: enable delayed expansion which let us use variable value 
 :: using !variable! syntax and this doesn't get 
-:: evaluted till its use 
+:: evaluated till its use 
 setlocal enabledelayedexpansion
 
 :: get value of argument 
