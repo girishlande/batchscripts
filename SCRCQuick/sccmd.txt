@@ -1,0 +1,3 @@
+ls -l
+cd girish/SCApplication
+sudo ./run.sh
