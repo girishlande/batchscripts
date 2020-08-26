@@ -139,3 +139,9 @@ Variable with modifier  Description
                         the first one found. If the environment variable name is 
                         not defined or the file is not found by the search,
                         this modifier expands to the empty string.    
+
+:: ----------------------------------------
+:: Call executable 
+@echo off
+call App\Backend\Dist\Release\abc.exe %*
+
