@@ -1,0 +1,3 @@
+ls -l
+cd girish
+sudo ./view.sh

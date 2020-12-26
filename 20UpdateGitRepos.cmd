@@ -1,5 +1,5 @@
-:: script to display all siblings folders of parent folder 
-:: and perform git pull in all of them 
+:: Script to check git status of all repositories 
+:: This will tell us if we have uncommited changes in any of the repository 
 @echo off
 
 setlocal
