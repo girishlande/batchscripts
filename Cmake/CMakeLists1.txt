@@ -1,0 +1,89 @@
+set(TARGET "ViewerPresentation")
+
+set(PRIVATEDEPENDENCIES
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Quick
+    Qt5::Svg
+    holxlog
+    Holxevents
+    Hologic.glm
+    GenEverest
+    ViewerApi
+    CoreLib
+    Common
+    Viewer
+    DicomReader
+    BackendApi
+    Everest.Style
+    cpprestsdk
+)
+
+set(TESTDEPENDENCIES
+    ${PRIVATEDEPENDENCIES}
+)
+
+add_subdirectory(AboutPageItems)
+add_subdirectory(AnnotationItems)
+add_subdirectory(CadItems)
+add_subdirectory(Hanging)
+add_subdirectory(NotificationItems)
+add_subdirectory(Patient)
+add_subdirectory(PatientList)
+add_subdirectory(PresentationCommon)
+add_subdirectory(Synchronization)
+add_subdirectory(Thumbnail)
+add_subdirectory(ToolsItems)
+add_subdirectory(ViewerGlobal)
+add_subdirectory(ViewportItems)
+add_subdirectory(PreferencesItems)
+
+set(VIEWERPRESENTATION_SOURCES
+    ${ABOUTPAGEITEMS_SOURCES}
+    ${ANNOTATIONITEMS_SOURCES}
+    ${CADITEMS_SOURCES}
+    ${HANGING_SOURCES}
+    ${NOTIFICATIONITEMS_SOURCES}
+    ${PATIENT_SOURCES}
+    ${PATIENTLIST_SOURCES}
+    ${PRESENTATIONCOMMON_SOURCES}
+    ${SYNCHRONIZATION_SOURCES}
+    ${THUMBNAIL_SOURCES}
+    ${TOOLSITEMS_SOURCES}
+    ${VIEWERGLOBAL_SOURCES}
+    ${VIEWPORTITEMS_SOURCES}
+    ${PREFERENCESITEMS_SOURCES}
+)
+
+set(VIEWERPRESENTATION_TESTS
+    ${HANGING_TESTS}
+    ${PATIENTLIST_TESTS}
+    ${TOOLSITEMS_TESTS}
+)
+
+set(VIEWERPRESENTATION_INCLUDES
+    ${ABOUTPAGEITEMS_INCLUDES}
+    ${ANNOTATIONITEMS_INCLUDES}
+    ${CADITEMS_INCLUDES}
+    ${HANGING_INCLUDES}
+    ${NOTIFICATIONITEMS_INCLUDES}
+    ${PATIENT_INCLUDES}
+    ${PATIENTLIST_INCLUDES}
+    ${PRESENTATIONCOMMON_INCLUDES}
+    ${SYNCHRONIZATION_INCLUDES}
+    ${THUMBNAIL_INCLUDES}
+    ${TOOLSITEMS_INCLUDES}
+    ${VIEWERGLOBAL_INCLUDES}
+    ${VIEWPORTITEMS_INCLUDES}
+    ${PREFERENCESITEMS_INCLUDES}
+)
+
+source_group(
+    TREE "${CMAKE_CURRENT_SOURCE_DIR}"
+    FILES
+    ${VIEWERPRESENTATION_SOURCES}
+    ${VIEWERPRESENTATION_TESTS}
+)
+
+create_shared_lib(${TARGET} ${TARGET_FOLDER} "${VIEWERPRESENTATION_SOURCES}" "${PUBLICDEPENDENCIES}" "${PRIVATEDEPENDENCIES}" "${VIEWERPRESENTATION_TESTS}" "${TESTDEPENDENCIES}" "${VIEWERPRESENTATION_INCLUDES}")
+set_target_properties(${TARGET} PROPERTIES COMPILE_FLAGS "/await")

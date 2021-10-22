@@ -1,0 +1,11 @@
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+add_subdirectory(Main)
+add_subdirectory(ViewerApi)
+add_subdirectory(DataLayer)
+add_subdirectory(Core)
+add_subdirectory(SupportLayer)
+add_subdirectory(PresentationLayer)
+add_subdirectory(Style)
+
+set(FILES_TO_TRANSLATE ${FILES_TO_TRANSLATE} PARENT_SCOPE)
