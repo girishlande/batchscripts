@@ -1,0 +1,9 @@
+@echo off
+
+setlocal 
+
+net use O: \\plm\pnnas\ugdev
+net use R: \\plm\pnnas\release
+net use S: \\plm\pnnas\ugmenu
+
+endlocal 
